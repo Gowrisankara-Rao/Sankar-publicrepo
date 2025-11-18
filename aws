@@ -1,15 +1,1 @@
-sudo wget -O /etc/yum.repos.d/jenkins.repo \
-    https://pkg.jenkins.io/redhat-stable/jenkins.repo
-sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
-sudo yum upgrade
-# Add required dependencies for the jenkins package
-sudo yum install fontconfig java-21-openjdk
-sudo yum install jenkins
-sudo systemctl daemon-reload
-Weekly release
-A new release is produced weekly to deliver bug fixes and features to users and plugin developers. It can be installed from the redhat yum repository.
-
-sudo wget -O /etc/yum.repos.d/jenkins.repo \
-    https://pkg.jenkins.io/redhat/jenkins.repo
-sudo rpm --import https://pkg.jenkiaws file
 
